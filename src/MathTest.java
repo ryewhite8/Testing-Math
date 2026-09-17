@@ -37,7 +37,7 @@ public class MathTest {
     })
     public void testReciprocal(double base, double exponent) {
 
-        Math.pow(base,-exponent) = 1/Math.pow(base, exponent);
+        double Math.pow(base,-exponent) = 1/ double Math.pow(base, exponent);
     }
 
 
@@ -58,7 +58,7 @@ public class MathTest {
     })
     public void testMultiplying(double base, double a, double b) {
 
-        Math.pow(base,a) * Math.pow(base,b) = Math.pow(base,a+b);
+        double Math.pow(base,a) * double Math.pow(base,b) = double Math.pow(base,a+b);
     }
 
 
@@ -79,7 +79,7 @@ public class MathTest {
     })
     public void testDividing(double base, double a, double b) {
 
-        Math.pow(base, a) / Math.pow(base, b) = Math.pow(base, a) - b;
+        double Math.pow(base, a) / double Math.pow(base, b) = double Math.pow(base, a) - b;
     }
 
 
@@ -99,28 +99,28 @@ public class MathTest {
             "-7.4, -8.3, -9.2"
     })
     public void testNestedPowers(double base, double a, double b) {
-        (Math.pow((Math.pow(base,a),b) = Math.pow(base,a)*b;
+        double Math.pow((double Math.pow(base,a),b) = double Math.pow(base,a)*b;
     }
 
 
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testZeroPower(double base) {
-        Math.pow(base,0) = 1;
+        double Math.pow(base,0) = 1;
     }
 
 
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testOnePower(double base) {
-        Math.pow(base,1) = base;
+       double Math.pow(base,1) = base;
     }
 
 
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testZeroBase(double exponent) {
-        Math.pow(0,exponent) = 0;
+       double Math.pow(0,exponent) = 0;
     }
 
 
